@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: "paolo-job"
+  name: paolo-job
   namespace: mlflow
 spec:
   ttlSecondsAfterFinished: 100
@@ -9,9 +9,9 @@ spec:
   template:
     spec:
       containers:
-      - name: "paolo-job"
-        image: "pscarpino/mlflow-docker-example"
-        command: ["python train.py --alpha 0.1 --l1-ratio 0.1"]
+      - name: paolo-job
+        image: pscarpino/mlflow-docker-example
+        command: ["python", "train.py", "--alpha 0.1 --l1-ratio 0.1"]
       resources:
         limits:
           memory: 512Mi
