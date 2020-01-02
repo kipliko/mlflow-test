@@ -10,5 +10,5 @@ spec:
       containers:
       - name: paolo-job
         image: pscarpino/mlflow-docker-example
-        command: ["python", "/home/train.py", "--alpha 0.1 --l1-ratio 0.1"]
+        command: ["python /home/train.py --alpha 0.1 --l1-ratio 0.1"]
       restartPolicy: Never
