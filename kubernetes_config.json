@@ -1,5 +1,5 @@
 {
     "kube-context": "docker-for-desktop",
-    "kube-job-template-path": "kubernetes_job_template.yaml",
+    "kube-job-template-path": "mlflow-test/kubernetes_job_template.yaml",
     "repository-uri": "pscarpino/mlflow-docker-example"
 }
