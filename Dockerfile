@@ -7,3 +7,6 @@ RUN pip install mlflow>=1.0 \
     && pip install pandas==0.22.0 \
     && pip install scikit-learn==0.19.1 \
     && pip install cloudpickle
+
+COPY train.py /home/
+COPY wine-quality.csv /home/
